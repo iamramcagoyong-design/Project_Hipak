@@ -1,0 +1,8 @@
+{
+  "name": "puffin-dose",
+  "version": "1.0.0",
+  "description": "Puffin Dose Vape Shop - MVC + CRUD (Node.js/Express, vanilla JS frontend)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "dependencies": { "express": "^4.19.2" }
+}

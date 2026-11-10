@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Puffin Dose - Vape Shop</title><link rel="stylesheet" href="/css/style.css">
+</head><body>
+<div class="modal" id="ageGate"><div class="box center">
+  <h2>Puffin Dose</h2><p>This site sells vape products for adults only.<br><b>Are you 18 years old or above?</b></p>
+  <div class="row"><button id="ageYes">Yes, I'm 18+</button><button class="ghost" id="ageNo">No</button></div>
+</div></div>
+
+<header><div class="brand">Puffin <b>Dose</b></div>
+  <button class="ghost cartbtn" id="openCart">Cart <span class="count" id="cartCount">0</span></button></header>
+
+<section class="hero"><h1>Puffin Dose</h1><p>Devices, pods and e-juice. Pay with GCash or Maya, we confirm your payment and prepare your order.</p></section>
+<main><div class="grid" id="products"></div>
+  <p class="note" style="margin-top:28px">Track an order: <input id="trId" placeholder="Order #" style="width:110px;display:inline-block"> <input id="trPhone" placeholder="Phone used" style="width:150px;display:inline-block"> <button class="sm" id="trBtn">Check</button> <span id="trOut"></span></p>
+</main>
+<footer>Purok Malinawon, Bagumbayan, Lupon, Philippines, 8207 &middot; Est. 2022 &middot; Not for sale to minors.</footer>
+
+<div class="modal" id="cartModal"><div class="box">
+  <h2>Your cart</h2><div id="cartLines"></div><p><b>Total: <span id="cartTotal">&#8369;0</span></b></p>
+  <h3>Delivery details</h3>
+  <label>Full name</label><input id="cName"><label>Phone number</label><input id="cPhone" inputmode="tel">
+  <label>Address</label><textarea id="cAddr" rows="2"></textarea>
+  <h3>Payment</h3>
+  <div class="pay"><label><input type="radio" name="pm" value="gcash" checked><span>GCash</span></label><label><input type="radio" name="pm" value="maya"><span>Maya</span></label></div>
+  <div class="note" id="payInfo"></div>
+  <label>Payment reference number</label><input id="cRef" placeholder="From your GCash/Maya receipt">
+  <div class="row" style="margin-top:16px"><button class="ghost" id="closeCart">Close</button><button id="placeOrder">Place order</button></div>
+</div></div>
+<div class="toast" id="toast"></div>
+<script src="/js/shop.js"></script></body></html>

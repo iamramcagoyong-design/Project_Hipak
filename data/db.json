@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Purple Haze Pod Kit",
+      "category": "Device",
+      "price": 899,
+      "stock": 15,
+      "image": "",
+      "description": "Compact pod starter kit."
+    },
+    {
+      "id": 2,
+      "name": "Grape Ice 30ml",
+      "category": "E-Juice",
+      "price": 350,
+      "stock": 40,
+      "image": "",
+      "description": "Cold grape, smooth hit."
+    },
+    {
+      "id": 3,
+      "name": "Mango Orange 30ml",
+      "category": "E-Juice",
+      "price": 350,
+      "stock": 25,
+      "image": "",
+      "description": "Sweet mango with citrus finish."
+    }
+  ],
+  "orders": [],
+  "settings": {
+    "gcash": {
+      "name": "Puffin Dose",
+      "number": "09452117917"
+    },
+    "maya": {
+      "name": "Puffin Dose",
+      "number": "09857938596"
+    }
+  },
+  "seq": {
+    "products": 3,
+    "orders": 0
+  }
+}

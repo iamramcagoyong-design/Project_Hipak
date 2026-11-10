@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Puffin Dose - Admin</title><link rel="stylesheet" href="/css/style.css">
+</head><body>
+<div class="modal open" id="loginBox"><div class="box center">
+  <h2>Admin login</h2><label>Password</label><input type="password" id="pw" autofocus>
+  <p id="loginErr" style="color:var(--bad)"></p><button id="loginBtn">Log in</button>
+</div></div>
+
+<header><div class="brand">Puffin <b>Dose</b> Admin</div><div><a href="/" style="margin-right:14px">View shop</a><button class="ghost" id="logout">Log out</button></div></header>
+<main>
+  <div class="tabs"><button class="on" data-tab="pProducts">Products</button><button data-tab="pOrders">Orders &amp; payments</button><button data-tab="pPay">Payment accounts</button></div>
+
+  <div class="panel on" id="pProducts">
+    <h2 id="formTitle">Add product</h2>
+    <div class="row"><div><label>Name</label><input id="fName"></div><div><label>Category</label><input id="fCat" placeholder="Device, E-Juice..."></div></div>
+    <div class="row"><div><label>Price (PHP)</label><input id="fPrice" type="number" min="0"></div><div><label>Stock</label><input id="fStock" type="number" min="0"></div></div>
+    <label>Product photo (optional)</label><input id="fFile" type="file" accept="image/png,image/jpeg,image/webp"><input id="fImg" type="hidden"><img id="fPrev" alt="Preview" style="display:none;max-width:140px;border-radius:12px;margin-top:8px"><label>Description</label><input id="fDesc">
+    <div class="row" style="margin:14px 0 26px"><button id="saveProd">Save product</button><button class="ghost" id="cancelEdit">Clear</button></div>
+    <div class="tablewrap"><table><thead><tr><th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th></th></tr></thead><tbody id="prodRows"></tbody></table></div>
+  </div>
+
+  <div class="panel" id="pOrders"><div class="tablewrap"><table>
+    <thead><tr><th>#</th><th>Customer</th><th>Items</th><th>Payment</th><th>Status</th><th></th></tr></thead><tbody id="orderRows"></tbody></table></div></div>
+
+  <div class="panel" id="pPay"><h2>GCash &amp; Maya details shown to customers</h2>
+    <div class="row"><div><label>GCash name</label><input id="gName"></div><div><label>GCash number</label><input id="gNum"></div></div>
+    <div class="row"><div><label>Maya name</label><input id="mName"></div><div><label>Maya number</label><input id="mNum"></div></div>
+    <p><button id="savePay">Save payment accounts</button></p></div>
+</main>
+<div class="toast" id="toast"></div>
+<script src="/js/admin.js"></script></body></html>
